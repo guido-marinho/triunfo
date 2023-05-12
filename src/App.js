@@ -30,19 +30,19 @@ class App extends React.Component {
     filterTrunfo: false,
   };
 
-  // // recupera savedCards do localStorage
-  // componentDidMount() {
-  //   const savedCards = JSON.parse(localStorage.getItem('savedCards'));
-  //   if (savedCards) {
-  //     this.setState({ savedCards });
-  //   }
-  // }
+  // recupera savedCards do localStorage
+  componentDidMount() {
+    const savedCards = JSON.parse(localStorage.getItem('savedCards'));
+    if (savedCards) {
+      this.setState({ savedCards });
+    }
+  }
 
-  // // salva savedCards no localStorage
-  // componentDidUpdate() {
-  //   const { savedCards } = this.state;
-  //   localStorage.setItem('savedCards', JSON.stringify(savedCards));
-  // }
+  // salva savedCards no localStorage
+  componentDidUpdate() {
+    const { savedCards } = this.state;
+    localStorage.setItem('savedCards', JSON.stringify(savedCards));
+  }
 
   isTrunfo = () => {
     // desestruturação do state
