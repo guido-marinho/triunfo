@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import '../CSS/Game.css';
 import Battle from './Battle';
 import GameTable from './GameTable';
 import NextRound from './NextRound';
@@ -12,7 +12,8 @@ class Game extends Component {
       <div>
         <div className="game-container">
           
-          <button 
+          <button
+          className='btn-play'
           onClick={ newGame }
           disabled={ cardDeck.length }
           >PLAY
@@ -52,14 +53,14 @@ class Game extends Component {
 
                 <div className='buttons-game'>
                   <button
-                    className='btn btn-success'
+                    className='btn-new-game'
                     type='button'
                     onClick={ newGame }
                   >
                     New Game
                   </button>
                   <button
-                    className='btn btn-danger'
+                    className='btn-end-game'
                     type='button'
                     onClick={ endGame }
                     >
@@ -86,17 +87,5 @@ class Game extends Component {
   }
 }
 
-Game.propTypes = {
-  cardDeck: PropTypes.arrayOf(PropTypes.object).isRequired,
-  gameCard: PropTypes.number.isRequired,
-  rounds: PropTypes.number.isRequired,
-  gameAction: PropTypes.bool.isRequired,
-  gameScore: PropTypes.number.isRequired,
-  newGame: PropTypes.func.isRequired,
-  endGame: PropTypes.func.isRequired,
-  playGame: PropTypes.func.isRequired,
-  newRound: PropTypes.func.isRequired,
-  onInputChange: PropTypes.func.isRequired,
-};
 
 export default Game;

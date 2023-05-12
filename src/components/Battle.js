@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Component } from 'react';
+import '../CSS/Battle.css';
 
 export default class Battle extends Component {
   render() {
@@ -7,7 +8,6 @@ export default class Battle extends Component {
     return (
       <div className='battle'>
         <div className='battle-attr'>
-          <label htmlFor='attr'>Choose your attribute:</label>
           <select
             className='form-select'
             id='attr'
@@ -22,7 +22,7 @@ export default class Battle extends Component {
         </div>
         <div className='battle-btn'>
           <button
-            className='btn btn-primary'
+            className=' button-play'
             type='button'
             onClick={ playGame }
           >

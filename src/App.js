@@ -1,5 +1,7 @@
 // import de react
 import React from 'react';
+import 'react-perfect-scrollbar/dist/css/styles.css';
+
 
 //  import de css
 import './App.css';
@@ -32,7 +34,7 @@ class App extends React.Component {
     cardDeck: [],
     gameCard: 0,
     gameAction: false,
-    gameAttr: '',
+    gameAttr: '1',
     gameScore: [0, 0, ''],
     rounds: 0,
   };
@@ -313,6 +315,7 @@ class App extends React.Component {
         />
         <div className="card-list-container">
           {
+            
             savedCards.filter((card) => (
               card.cardName.toLowerCase().includes(filterName.toLowerCase())
               && (filterRare === 'todas' ? card : card.cardRare === filterRare)

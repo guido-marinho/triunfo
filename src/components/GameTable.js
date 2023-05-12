@@ -1,13 +1,14 @@
-import PropTypes from 'prop-types';
 import { Component } from 'react';
+import '../CSS/GameTable.css';
 import Card from './Card';
+
 
 export default class GameTable extends Component {
   render() {
     const { cardDeck, gameCard, rounds, gameAction, gameScore } = this.props;
     return (
       <div className="game-deck">
-        <div className="game-table-container">
+        <div className="player">
           <h3>Player 1</h3>
             {
               (!rounds || gameAction) ? (
@@ -28,7 +29,7 @@ export default class GameTable extends Component {
             <p className='score'>{ gameScore[0] }</p>
         </div>
 
-        <div className="game-table-container">
+        <div className="player">
           <h3>Player 2</h3>
             {
               (rounds || gameAction) ? (
@@ -53,11 +54,3 @@ export default class GameTable extends Component {
     )
   }
 }
-
-GameTable.propTypes = {
-  cardDeck: PropTypes.arrayOf(PropTypes.object).isRequired,
-  gameCard: PropTypes.number.isRequired,
-  rounds: PropTypes.number.isRequired,
-  gameAction: PropTypes.bool.isRequired,
-  gameScore: PropTypes.number.isRequired,
-};

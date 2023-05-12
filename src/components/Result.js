@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Component } from 'react';
+import '../CSS/Result.css';
 
 export default class Result extends Component {
   render() {

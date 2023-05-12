@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Component } from 'react';
+import '../CSS/NextRound.css';
 import Result from './Result';
 
 export default class NextRound extends Component {
@@ -11,7 +12,8 @@ export default class NextRound extends Component {
       <>
       <p>{ gameScore[2] }</p>
       <button
-        className='btn btn-success'
+        className='
+        btn-next-round'
         type='button'
         onClick={ newRound }
       >
