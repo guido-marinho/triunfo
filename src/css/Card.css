@@ -1,0 +1,162 @@
+.card-container {
+  align-items: center;
+  background: white;
+  border-radius: 9.733px;
+  box-shadow: 0 3.893px 18.492px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 593px;
+  justify-content: center;
+  margin-top: 10px;
+  width: 404px;
+}
+
+.card {
+  align-items: center;
+  background: #d9dbda;
+  border-radius: 9.733px;
+  height: 569px;
+  width: 380px;
+}
+
+.card-trunfo {
+  align-items: center;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #fff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  border-radius: 9.733px;
+  height: 569px;
+  transition: all 0.5s ease-out;
+  width: 380px;
+}
+
+.name-card {
+  background: black;
+  border-radius: 9.733px 9.733px 0 0;
+  color: white;
+  display: flex;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  height: 40px;
+  justify-content: center;
+  line-height: 150%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  width: 355px;
+}
+
+.image-card {
+  align-items: center;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  display: flex;
+  height: 269px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 355px;
+}
+
+.image-card > img {
+  height: 269px;
+  width: 380px;
+}
+
+.description-card {
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  height: 40px;
+  line-height: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skew(10deg, -9deg) translateY(-5px);
+  width: 345px;
+  word-wrap: break-word;
+}
+
+.attr-card-container {
+  align-items: center;
+  background: white;
+  border-radius: 0 0 9.733px 9.733px;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  min-height: 220px;
+  padding-top: 55px;
+  width: 355px;
+}
+
+.attr-card {
+  align-items: center;
+  background: #f0f2f5;
+  border-radius: 9.733px;
+  color: #3d495c;
+  display: flex;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  height: 29.92px;
+  justify-content: space-between;
+  line-height: 150%;
+  margin-top: 5px;
+  padding-left: 5px;
+  width: 276.41px;
+}
+
+.attr-card > span {
+  background: black;
+  border-radius: 0 9.733px 9.733px 0;
+  color: #f0f2f5;
+  height: 29.92px;
+  padding-top: 3.5px;
+  text-align: center;
+  width: 45px;
+}
+
+.rare-card {
+  align-items: center;
+  background: #f0f2f5;
+  border-radius: 9.733px;
+  color: #070707;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  height: 29.92px;
+  justify-content: space-between;
+  line-height: 150%;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 276.41px;
+}
+
+.p-trunfo {
+  font-size: 0;
+  width: 0;
+}
