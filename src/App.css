@@ -45,15 +45,13 @@ body {
 
 .card-list-container {
   display: flex;
-  flex-wrap: nowrap; /* impede a quebra de linha */
-  overflow-x: auto; /* scroll horizontal */
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between; /* alinhamento à esquerda */
-  margin-top: 50px;
+  justify-content: center; /* alinhamento à esquerda */
   min-height: 800px; /* altura mínima */
   max-height: 800px; /* altura máxima */
-
-  padding-top: 50px;
+  overflow-y: auto; /* habilitando a barra de rolagem */
 }
 
 .card-list-item {
